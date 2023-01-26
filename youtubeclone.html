@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Youtube clone-web Prep</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body{
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #main{
+            width: 100%;
+        }
+        
+        #content{
+            padding: 1em;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        #sidebar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .sidebar-icon{
+            padding: 2.5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .sidebar-icon p {
+            margin: 0;
+        }
+        
+        .sidebar-icon ion-icon {
+            font-size: 1.5em;
+        }
+        
+        #topbar{
+            height: 8vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #logo {
+            height: 50%;
+        }
+        
+        #search-wrapper {
+            display: flex;
+            height: 50%;
+        }
+        
+        #topbar-icons {
+        display: flex;
+        }
+        
+        .topbar-icon ion-icon {
+            font-size: 2em;
+            padding: 0 0.3em;
+        }
+        
+        #mic-icon {
+            display: flex;
+            margin: 0 0.5em;
+        }
+        
+        #mic-icon ion-icon {
+            font-size: 1.7em;
+        }
+        
+        #search-btn{
+            padding: 0 0.6em;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+        }
+        
+        #thumb{
+            width: 380px;
+        }
+        
+        .description-video{
+            display: flex;
+            margin-top: 0.5em;
+            width: 380px;
+        }
+        
+        #description {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5em;
+        
+        }
+        #description h4 {
+            margin: 0;
+            font-size: 16px;
+        }
+        #description p{
+            margin: 0;
+            font-size: 12px;
+        }
+        #page-content{
+            display: flex;
+            flex-direction: column;
+            padding: 0.2em;
+            width: 380px;
+        
+        }
+        #epicode-logo{
+            width: 45px;
+        }
+    
+    
+     </style>
+</head>
+<body>
+    <div id="sidebar">
+
+        <div class="sidebar-icon">
+        <ion-icon name="menu-sharp"></ion-icon>
+        </div>
+
+        <div class="sidebar-icon">
+        <ion-icon name="home-sharp"></ion-icon>
+        <p>Home</p>
+        </div>
+
+        <div class="sidebar-icon">
+        <ion-icon name="compass-sharp"></ion-icon>
+        <p>Explore</p>
+        </div>
+
+        <div class="sidebar-icon">
+        <ion-icon name="albums-sharp"></ion-icon>
+        <p>Library</p>
+        </div>
+
+    </div>
+    <div id="main">
+        <div id="topbar">
+            <img src="yt-logo.svg" alt="youtube-logo" id="logo"/>
+            <div id="search-wrapper">
+                <input type="text" placeholder="Search on Youtube..."/>
+
+                <button id="search-btn">
+                        <ion-icon name="search-sharp"></ion-icon>
+                </button>
+                <div id="mic-icon">
+                    <ion-icon name="mic-sharp"></ion-icon>
+                </div>
+            </div>
+            <div id="topbar-icons">
+
+                <div class="topbar-icon">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                </div>
+
+                <div class="topbar-icon">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </div>
+
+                <div class="topbar-icon">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="content">
+            <div id="page-content">
+            <img src="epicode_thumb.png" alt="epicode_thumb" id="thumb"/>
+            <div class="description-video">
+                <img src="epicode-logo.png" alt="epicode_logo" id="epicode-logo"/>
+                <div id="description">
+                    <h4>Title</h4>
+                    <p>Description</p>
+                </div>
+            </div>
+            </div>
+
+            <div id="page-content">
+                <img src="epicode_thumb.png" alt="epicode_thumb" id="thumb"/>
+                <div class="description-video">
+                    <img src="epicode-logo.png" alt="epicode_logo" id="epicode-logo"/>
+                    <div id="description">
+                        <h4>Title</h4>
+                        <p>Description</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page-content">
+                    <img src="epicode_thumb.png" alt="epicode_thumb" id="thumb"/>
+                    <div class="description-video">
+                        <img src="epicode-logo.png" alt="epicode_logo" id="epicode-logo"/>
+                        <div id="description">
+                            <h4>Title</h4>
+                            <p>Description</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div id="page-content">
+                        <img src="epicode_thumb.png" alt="epicode_thumb" id="thumb"/>
+                        <div class="description-video">
+                            <img src="epicode-logo.png" alt="epicode_logo" id="epicode-logo"/>
+                            <div id="description">
+                                <h4>Title</h4>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div id="page-content">
+                            <img src="epicode_thumb.png" alt="epicode_thumb" id="thumb"/>
+                            <div class="description-video">
+                                <img src="epicode-logo.png" alt="epicode_logo" id="epicode-logo"/>
+                                <div id="description">
+                                    <h4>Title</h4>
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div id="page-content">
+                                <img src="epicode_thumb.png" alt="epicode_thumb" id="thumb"/>
+                                <div class="description-video">
+                                    <img src="epicode-logo.png" alt="epicode_logo" id="epicode-logo"/>
+                                    <div id="description">
+                                        <h4>Title</h4>
+                                        <p>Description</p>
+                                    </div>
+                                </div>
+                                </div>
+
+
+           
+            
+
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
