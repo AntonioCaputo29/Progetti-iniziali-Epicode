@@ -1,0 +1,13 @@
+small {
+  font-size: 0.5em;
+}
+
+
+.card {
+  width: 100%;
+  aspect-ratio: 3/5;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
